@@ -7,6 +7,8 @@
 
 #include <WiFiClient.h>
 
+#include "wifi.h"
+
 ESP8266WiFiMulti WiFiMulti;
 
 String payload;
@@ -29,7 +31,7 @@ void setup() {
   }
 
   WiFi.mode(WIFI_STA);
-  WiFiMulti.addAP("", "");
+  WiFiMulti.addAP(STASSID, STAPSK);
   
 }
 
