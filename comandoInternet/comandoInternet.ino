@@ -29,7 +29,7 @@ void setup() {
   }
 
   WiFi.mode(WIFI_STA);
-  WiFiMulti.addAP("rodrigo02", "rodrigo2369");
+  WiFiMulti.addAP("", "");
   
 }
 
