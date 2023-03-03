@@ -25,7 +25,7 @@ void setup() {
   Serial.println();
 
   for (uint8_t t = 4; t > 0; t--) {
-    Serial.printf("[SETUP] WAIT %d...\n", t);
+    Serial.printf("[SETUP] WAIT %d...\n", t); 
     Serial.flush();
     delay(1000);
   }
@@ -44,7 +44,7 @@ void loop() {
     HTTPClient http;
 
     Serial.print("[HTTP] begin...\n");
-    if (http.begin(client, "http://10.0.0.101/api/comando")) {  // HTTP
+    if (http.begin(client, URL)) {  // HTTP
 
 
       Serial.print("[HTTP] GET...\n");
