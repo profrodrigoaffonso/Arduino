@@ -9,7 +9,7 @@
 #endif
 int tempo = 1000;
 const char* ssid = STASSID;
-const char* password = STAPSK;
+const char* password = STAPSK;/home/rodrigo/dev/Arduino/comandos2/comandos2.ino
 
 ESP8266WebServer server(80);
 
