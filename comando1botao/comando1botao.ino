@@ -11,7 +11,8 @@
 // digital pin 2 has a pushbutton attached to it. Give it a name:
 int pushButton = 2;
 int onoff = 0;
-int rele = 13;
+int rele2 = 13;
+int rele = 12;
 
 // the setup routine runs once when you press reset:
 void setup() {
@@ -20,6 +21,7 @@ void setup() {
   // make the pushbutton's pin an input:
   pinMode(pushButton, INPUT);
   pinMode(rele, OUTPUT);
+  pinMode(rele2, OUTPUT);
 }
 
 // the loop routine runs over and over again forever:
@@ -42,8 +44,10 @@ void loop() {
 
   if(onoff == 1){
     digitalWrite(rele, LOW);
+    digitalWrite(rele2, HIGH);
   } else {
     digitalWrite(rele, HIGH);
+    digitalWrite(rele2, LOW);
   }
 
   delay(1);  // delay in between reads for stability

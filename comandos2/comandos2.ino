@@ -4,8 +4,8 @@
 #include <ESP8266mDNS.h>
 
 int tempo = 1000;
-const char* ssid = "";
-const char* password = "";
+const char* ssid = "rodrigo02";
+const char* password = "rodrigo2369";
 
 ESP8266WebServer server(80);
 
